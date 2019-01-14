@@ -28,6 +28,6 @@ declare module 'graphql-list' {
 
     export interface GraphQLListResolver<Edge = any> {
         type: GraphQLListType
-        resolve(): List<Edge>|Promise<List<Edge>>
+        resolve(source?: any, args?: any, ctx?: any, info?: any): List<Edge>|Promise<List<Edge>>
     }
 }
